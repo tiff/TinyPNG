@@ -52,7 +52,6 @@ function crushdir() {
   for x in $(find $TARGET -type f -name '*.png'); do
     position=$(($position+1))
     percentdone=$(($position*100/$TOTALFILES))
-    clear
     echo "["$position/$TOTALFILES"] ("$percentdone "%)"
     count=0
     if [ -f "$LOGFILE" ]
