@@ -65,7 +65,7 @@ function crushdir() {
   done
   totalsum=$(($totalstart-$totalend))
   totalpercent=$(($totalsum*100/$totalstart))
-  echo "Total Saved:" $(($totalsum/1024)) "KByte ("$totalsum "Byte) ("$totalpercent"%)"
+  echo -e $COL_CYAN"Total Saved:" $(($totalsum/1024)) "KByte ("$totalsum "Byte) ("$totalpercent"%)"$COL_RESET
 }
 
 function crushfile() {
